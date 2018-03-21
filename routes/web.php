@@ -35,3 +35,5 @@ Route::post('/savecontact', function (){
         return Response::json(Request::all());
     }
 });
+
+//myroute
