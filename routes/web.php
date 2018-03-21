@@ -24,9 +24,8 @@ Route::resource('contact', 'ContactController');
 Route::group(['prefix' => 'admin'], function (){
 //   CRUD::resource('tag','Admin\TagCrudController');
 //   CRUD::resource('tag2', 'Admin\Tag2CrudController');
-    CRUD::resource('test', 'Admin\TestCrudController');
     CRUD::resource('product', 'Admin\ProductCrudController');
-
+    CRUD::resource('work', 'Admin\WorkCrudController');
 });
 
 Route::post('/savecontact', function (){

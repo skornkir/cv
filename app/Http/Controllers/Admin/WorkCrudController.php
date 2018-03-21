@@ -5,10 +5,11 @@ namespace App\Http\Controllers\Admin;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 
 // VALIDATION: change the requests to match your own file names if you need form validation
-use App\Http\Requests\TestRequest as StoreRequest;
-use App\Http\Requests\TestRequest as UpdateRequest;
+use App\Http\Requests\WorkRequest as StoreRequest;
+use App\Http\Requests\WorkRequest as UpdateRequest;
 
-class TestCrudController extends CrudController
+
+class WorkCrudController extends CrudController
 {
     public function setup()
     {
@@ -18,9 +19,9 @@ class TestCrudController extends CrudController
         | BASIC CRUD INFORMATION
         |--------------------------------------------------------------------------
         */
-        $this->crud->setModel('App\Models\Test');
-        $this->crud->setRoute(config('backpack.base.route_prefix') . '/test');
-        $this->crud->setEntityNameStrings('test', 'tests');
+        $this->crud->setModel('App\Models\Work');
+        $this->crud->setRoute(config('backpack.base.route_prefix') . '/work');
+        $this->crud->setEntityNameStrings('work', 'works');
 
         /*
         |--------------------------------------------------------------------------
@@ -115,5 +116,10 @@ class TestCrudController extends CrudController
         // your additional operations after save here
         // use $this->data['entry'] or $this->crud->entry
         return $redirect_location;
+    }
+
+    public function getData(){
+        //$entries = $this->crud->getEntries();
+
     }
 }

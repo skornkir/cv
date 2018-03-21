@@ -13,6 +13,7 @@
           <!-- ==== Recommended place for admin menu items ==== -->
           <!-- ================================================ -->
           <li><a href="{{ backpack_url('dashboard') }}"><i class="fa fa-dashboard"></i> <span>{{ trans('backpack::base.dashboard') }}</span></a></li>
+          <li><a href="{{ backpack_url('work') }}"><i class="fa fa-briefcase"></i><span>Работа</span></a></li>
 
 
           <!-- ======================================= -->
