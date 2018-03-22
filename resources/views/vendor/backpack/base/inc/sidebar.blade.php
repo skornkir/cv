@@ -14,7 +14,8 @@
           <!-- ================================================ -->
           <li><a href="{{ backpack_url('dashboard') }}"><i class="fa fa-dashboard"></i> <span>{{ trans('backpack::base.dashboard') }}</span></a></li>
           <li><a href="{{ backpack_url('work') }}"><i class="fa fa-briefcase"></i><span>Работа</span></a></li>
-
+          <li><a href="{{ backpack_url('education') }}"><i class="fa fa-briefcase"></i><span>Образование</span></a></li>
+          <li><a href="{{ backpack_url('portfolio') }}"><i class="fa fa-briefcase"></i><span>Портфолион</span></a></li>
 
           <!-- ======================================= -->
           {{-- <li class="header">Other menus</li> --}}

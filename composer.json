@@ -9,6 +9,7 @@
         "backpack/base": "^0.8.9",
         "backpack/crud": "^3.3",
         "backpack/langfilemanager": "^1.0",
+        "barryvdh/laravel-ide-helper": "^2.4",
         "fideloper/proxy": "^4.0",
         "frozennode/administrator": " 5.*",
         "laravel/framework": "5.6.*",
