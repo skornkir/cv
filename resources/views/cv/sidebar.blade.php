@@ -6,7 +6,7 @@
                 <div class="crt-card bg-primary text-center">
                     <div class="crt-card-avatar"><span class="crt-avatar-state"> <span
                                     class="crt-avatar-state1"> <img class="avatar avatar-195" alt=""
-                                                                    src="https://certy.px-lab.com/developer/wp-content/uploads/sites/6/2017/08/certy-programmer-1-195x195.png"
+                                                                    src={{asset('images/JHBEcj7czFs.jpg')}}
                                                                     srcset="https://certy.px-lab.com/developer/wp-content/uploads/sites/6/2017/08/certy-programmer-1.png 2x"> </span>
                         </span>
                     </div>

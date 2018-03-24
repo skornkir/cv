@@ -2,9 +2,7 @@
 use Illuminate\Support\Facades\DB;
 
 $works = DB::table('works')->get();
-foreach ($works as $work) {
-    //  dd($work);
-}
+$educations = DB::table('educations')->get();
 ?>
 <div class="crt-paper-layers crt-animate experience">
     <div class="crt-paper clear-mrg clearfix">
@@ -22,7 +20,7 @@ foreach ($works as $work) {
                     @endforeach
                 </div>
             </section>
-            <section id="timeline" class="section padd-box"><h2 class="title-lg text-upper">Education</h2>
+            <section id="timeline" class="section padd-box"><h2 class="title-lg text-upper">Образование</h2>
                 <div class="education">
                     @foreach($educations as $education)
                         <div class="education-box">
@@ -30,12 +28,13 @@ foreach ($works as $work) {
                                 <span>{{$education->interval_work}}</span>
                             </span>
                             <h3>
-                                <a href="https://themeforest.net/user/px-lab?ref=PX-lab">{{$work->speciality}}</a>
+                                <a href="https://themeforest.net/user/px-lab?ref=PX-lab">{{$education->speciality}}</a>
                             </h3>
                             <a href="https://themeforest.net/user/px-lab?ref=PX-lab">
-                                <span class="education-company">{{$work->university}}</span>
+                                <span class="education-company">{{$education->university}}</span>
                             </a>
                         </div>
+                    @endforeach
                 </div>
             </section>
         </div>

@@ -20,7 +20,7 @@ class EducationCrudController extends CrudController
         */
         $this->crud->setModel('App\Models\Education');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/education');
-        $this->crud->setEntityNameStrings('education', 'education');
+        $this->crud->setEntityNameStrings('education', 'educations');
 
         /*
         |--------------------------------------------------------------------------

@@ -96,3 +96,9 @@ body{
 #crtNavInner{
     position: fixed;
 }
+
+
+.pf-figure img{
+    width: 380px;
+    height: 253px;
+}

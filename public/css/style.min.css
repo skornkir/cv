@@ -5197,7 +5197,8 @@ div.wpcf7-response-output {
 
 @media (min-width: 768px) {
     .education {
-        margin-left: 210px; }
+        margin-left: 187px;
+    }
     .education:before {
         top: 10px; }
     .education-box {

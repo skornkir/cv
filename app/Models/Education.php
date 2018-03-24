@@ -15,7 +15,7 @@ class Education extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'education';
+    protected $table = 'educations';
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     // protected $guarded = ['id'];

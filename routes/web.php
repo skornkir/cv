@@ -22,10 +22,15 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('contact', 'ContactController');
 
 Route::group(['prefix' => 'admin'], function (){
-    CRUD::resource('product', 'Admin\ProductCrudController');
-    CRUD::resource('education', 'Admin\ProductCrudController');
-    CRUD::resource('portfolio', 'Admin\ProductCrudController');
+    CRUD::resource('education', 'Admin\EducationCrudController');
     CRUD::resource('work', 'Admin\WorkCrudController');
+    Route::group(['prefix' => 'portfolio'], function (){
+        Route::get('/', 'PortfolioController@index');
+        Route::get('create', 'PortfolioController@create');
+        Route::post('create', 'PortfolioController@store');
+        Route::delete('{id}/delete', 'PortfolioController@delete');
+        //Route::delete('{id}/delete', 'PortfolioController@delete');
+    });
 });
 
 Route::post('/savecontact', function (){
@@ -34,3 +39,5 @@ Route::post('/savecontact', function (){
         return Response::json(Request::all());
     }
 });
+
+Route::resource('blog', 'BlogController');
